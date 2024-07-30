@@ -1,2 +1,2 @@
 # CPL_Projects
-Assigments based on Implementation of language and software optimizations of Compilers
+Assigments and Projects based on Implementation of language and software optimizations of Compilers
