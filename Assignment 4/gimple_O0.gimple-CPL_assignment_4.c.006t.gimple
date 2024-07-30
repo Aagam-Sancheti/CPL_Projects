@@ -1,0 +1,73 @@
+int main ()
+{
+  int D.4868;
+
+  {
+    int n;
+
+    try
+      {
+        printf ("Enter n of which factorial has to be calculated :\n");
+        scanf ("%d", &n);
+        n.0_1 = n;
+        _2 = factorial_recursion (n.0_1);
+        printf ("Factorial using recursion is : %d\n", _2);
+        n.1_3 = n;
+        factorial_loops (n.1_3);
+      }
+    finally
+      {
+        n = {CLOBBER(eol)};
+      }
+  }
+  D.4868 = 0;
+  return D.4868;
+}
+
+
+int factorial_recursion (int n)
+{
+  int D.4873;
+  int factorialNminus1;
+  int factorial;
+
+  if (n == 1) goto <D.4870>; else goto <D.4872>;
+  <D.4872>:
+  if (n == 0) goto <D.4870>; else goto <D.4871>;
+  <D.4870>:
+  D.4873 = 1;
+  // predicted unlikely by early return (on trees) predictor.
+  return D.4873;
+  <D.4871>:
+  _1 = n + -1;
+  factorialNminus1 = factorial_recursion (_1);
+  factorial = factorialNminus1 * n;
+  D.4873 = factorial;
+  return D.4873;
+}
+
+
+int factorial_loops (int n)
+{
+  int D.4875;
+  int factorial;
+
+  factorial = 1;
+  {
+    int i;
+
+    i = n;
+    goto <D.4866>;
+    <D.4865>:
+    factorial = factorial * i;
+    i = i + -1;
+    <D.4866>:
+    if (i > 0) goto <D.4865>; else goto <D.4863>;
+    <D.4863>:
+  }
+  printf ("Factorial using loops is : %d\n", factorial);
+  D.4875 = 0;
+  return D.4875;
+}
+
+
