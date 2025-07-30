@@ -1,2 +1,3 @@
-# CPL_Projects
-Assigments and Projects based on Implementation of language and software optimizations of Compilers
+# CPL Projects
+Experimentation with Compiler and Language Processors.
+This repository contains assigments and projects based on Implementation of language and software optimizations of Compilers.
